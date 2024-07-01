@@ -1,0 +1,14 @@
+name: Hello world!
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  hello_world:
+    runs-on: ubuntu-24.04
+    steps:
+      - name: Dice hola
+        run: |
+          echo "Hola mundo"
